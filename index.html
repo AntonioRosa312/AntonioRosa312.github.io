@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio showcasing GitHub projects and skills.">
+    <meta name="author" content="Antonio Rosa">
+    <title>Antonio Rosa - GitHub Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS for Layout and Styling -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #333;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .hero .cta-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .hero .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* About Section */
+        .about {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #fff;
+        }
+
+        .about h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+        }
+
+        .projects h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 0 10%;
+        }
+
+        .project {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-10px);
+        }
+
+        .project h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .project p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .project a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Antonio Rosa</h1>
+        <p>Computer Science Student | Systems Programming Enthusiast | University at Buffalo</p>
+        <a href="#projects" class="cta-button">View My Work</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <!-- <p>Hi, I'm Antonio Rosa, a passionate Computer Science student with a love for building elegant, user-friendly websites and apps. I specialize in systems development using C, C++, and Python, but I also enjoy broadening my education contributing to open-source projects and learning new technologies like Fullstack, NumPy and SQL.</p> -->
+        <p>
+            Hi! I'm <strong>Antonio Rosa</strong>, a Computer Science student with a passion for solving complex problems and creating innovative software solutions. Currently, I'm pursuing my degree at the University at Buffalo where I’m sharpening my skills in programming, algorithms, and data structures, while also diving deep into the world of artificial intelligence, sytstems programming, and web development.
+        </p>
+        <p>
+            I have experience working with various programming languages like <strong>C, C++, Ocaml, SQL, HTML/CSS</strong> and <strong>Python</strong>. I’m particularly interested in building efficient, scalable systems and leveraging cutting-edge technologies to make a real-world impact. In addition to my academic studies, I enjoy contributing to open-source projects and participating in coding challenges on platforms like <a href="https://adventofcode.com/" target="_blank">Advent of Code</a> and <a href="https://codehs.com/" target="_blank">CodeHS</a>.
+        </p>
+        <p>
+            I’m constantly learning and growing, attending coding seminars,  and exploring new technologies. My goal is to become a software engineer, and I’m excited to keep building my skills through real-world projects and collaboration with like-minded people.
+        </p>
+        <p>
+            Feel free to check out my GitHub repositories below to see some of the projects I've worked on. I’m always open to learning new ideas, collaborating on projects, and solving challenging problems.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>My GitHub Projects</h2>
+
+        <div class="project-grid">
+            <!-- Project 1 -->
+            <div class="project">
+                <h3>Pintos Operating System</h3>
+                <p>This is an open source project based off the Pintos operating system created by Ben Pfaff at Standford Universtiy. Within this project I worked in a group of 3 to further implement features to the operating system that include, alarm clock for threads, a priority scheduler, and an advanced scheduler including round robin scheduling. Due to the University at Buffalo's Academic Integrity rules I am unable to post this publically. Please contact me if you would like to know more about this project!</p>
+                <a href="https://github.com/yourusername/project-name-1" target="_blank">View Project</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project">
+                <h3>Interpreter in Ocaml</h3>
+                <p>This project is a interpreter developed within the functional programming language of Ocaml. The purpose is to process human-readable code written in a txt file into intructions that the computer can execute. Due to the University at Buffalo's Academic Integrity rules I am unable to post this publically. Please contact me if you would like to know more about this project!</p>
+                <a href="https://github.com/yourusername/project-name-2" target="_blank">View Project</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project">
+                <h3>AI Card Counting</h3>
+                <p>This project is focused on creating a card counting AI for the infamous game of Blackjack. This project is still a work in progress, but intends to use the Hi-Lo alogorithm for Blackjack.</p>
+                <a href="https://github.com/AntonioRosa312/f24-blackjack" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Antonio Rosa. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
